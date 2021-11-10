@@ -1,0 +1,8 @@
+ONE | 10/6/2021 3:50:51 PM --------------------- | Read file : OP_Test_LCIT_301F_EDI.txt Successed
+
+ONE | 10/6/2021 3:50:51 PM --------------------- | Check file : OP_Test_LCIT_301F_EDI.txt Incorrect Version : COPARN:D:99B
+
+ONE | 10/6/2021 3:51:57 PM --------------------- | Read file : OP_Test_LCIT_301F_EDI.txt Successed
+ONE | 10/6/2021 3:51:57 PM --------------------- | Check file : OP_Test_LCIT_301F_EDI.txt Incorrect Version : COPARN:D:99B
+ONE | 10/6/2021 3:56:24 PM --------------------- | Read file : OP_Test_LCIT_301F_EDI.txt Successed
+ONE | 10/6/2021 3:56:24 PM --------------------- | Check file : OP_Test_LCIT_301F_EDI.txt Incorrect Version : COPARN:D:99B

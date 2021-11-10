@@ -1,0 +1,530 @@
+ONE | 10/14/2021 11:05:18 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 11:05:57 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 11:28:10 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:29:12 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:29:17 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:30:09 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:30:45 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:31:23 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:31:44 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:33:07 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:34:20 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:35:27 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:36:18 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 11:37:19 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:40:10 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:40:47 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:43:29 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:49:04 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:49:52 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:51:06 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:52:14 AM --------------------- | Read file : NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt SuccessedONE | 10/14/2021 11:52:14 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:55:40 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.MoveTo(String destFileName)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 11:57:12 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 11:58:27 AM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.UnauthorizedAccessException: Access to the path 'D:\LCIT_EDI_COPARN\TEST_FILE\ONE\Replace\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 12:01:31 PM --------------------- | Read file : NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)ONE | 10/14/2021 12:01:31 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 12:02:06 PM --------------------- | Read file : NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)ONE | 10/14/2021 12:02:06 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 12:04:08 PM --------------------- | Read file : NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\NewOP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)ONE | 10/14/2021 12:04:08 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt System.IO.FileNotFoundException: Could not find file 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'.
+File name: 'c:\windows\system32\inetsrv\OP_Test_LCIT_RDTYP_YY_cash_EDI.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 12:07:25 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+
+
+
+
+
+
+
+
+
+
+ONE | 10/14/2021 12:36:44 PM --------------------- | Read file : test.txt Successed
+ONE | 10/14/2021 12:38:57 PM --------------------- | Read file : test.txt Successed
+ONE | 10/14/2021 12:39:40 PM --------------------- | Read file : test.txt Successed
+ONE | 10/14/2021 12:42:38 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 12:42:38 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 12:43:54 PM --------------------- | Read file : test.txt Successed
+ONE | 10/14/2021 12:47:49 PM --------------------- | Read file : test.txt Successed
+
+ONE | 10/14/2021 12:54:12 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/14/2021 12:55:28 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 1:01:48 PM --------------------- | Read file : OP_Test_LCIT_301F_Reefer_EDI.txt Successed
+ONE | 10/14/2021 1:03:47 PM --------------------- | Read file : OP_Test_LCIT_301F_Danger_EDI.txt Successed
+ONE | 10/14/2021 1:04:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:04:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:05:02 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:05:02 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:05:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:05:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:06:25 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:06:25 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:06:57 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:06:57 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:08:23 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:08:23 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:09:10 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:09:10 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:09:23 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:09:23 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:10:12 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:10:12 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:11:05 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 1:11:05 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 1:12:10 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:12:10 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:13:12 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:13:12 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:14:27 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:14:27 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:16:14 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:16:14 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:16:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:16:51 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:18:34 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:18:34 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:19:30 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt SuccessedONE | 10/14/2021 1:19:30 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:19:58 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt Successed
+ONE | 10/14/2021 1:21:41 PM --------------------- | Read file : OP_Test_LCIT_301F_Underdeck_EDI.txt SuccessedONE | 10/14/2021 1:21:41 PM --------------------- | Read file : OP_Test_LCIT_301F_Underdeck_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:22:31 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 1:22:31 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:26:34 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 1:26:34 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:27:33 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 1:27:33 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:27:50 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 1:27:50 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:28:00 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 1:28:00 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:30:02 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:30:15 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:31:22 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:33:16 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:34:17 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:35:32 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at cvfile.convertISO.iso_check(String a)
+   at edi_translate.ONE_translate.EQD(String[] EQDelement)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:35:55 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:37:20 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:38:26 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:38:43 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:38:57 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:39:14 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:40:49 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:40:59 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at cvfile.convertISO.iso_check(String a)
+   at edi_translate.ONE_translate.EQD(String[] EQDelement)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:42:03 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:43:47 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:45:59 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:52:37 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:53:09 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:54:25 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 1:55:50 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at cvfile.convertISO.iso_check(String a)
+   at edi_translate.ONE_translate.EQD(String[] EQDelement)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 1:59:06 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:01:18 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:01:51 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:02:37 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:02:48 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:03:13 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 2:04:46 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:04:46 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:05:29 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:05:29 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:06:15 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:06:15 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:08:01 PM --------------------- | Check file :  Incorrect Version : 
+ONE | 10/14/2021 2:08:01 PM --------------------- | Check file :  Incorrect Version : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ONE | 10/14/2021 2:44:49 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt Successed
+ONE | 10/14/2021 2:45:21 PM --------------------- | Read file : OP_Test_LCIT_301F_Underdeck_EDI.txt Successed
+ONE | 10/14/2021 2:45:49 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 2:45:49 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at cvfile.convertISO.iso_check(String a)
+   at edi_translate.ONE_translate.EQD(String[] EQDelement)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 2:54:03 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/14/2021 2:55:31 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_cash_EDI.txt Successed
+ONE | 10/14/2021 2:55:43 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_SY_Credit_EDI.txt Successed
+ONE | 10/14/2021 2:55:58 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt SuccessedONE | 10/14/2021 2:55:58 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at cvfile.convertISO.iso_check(String a)
+   at edi_translate.ONE_translate.EQD(String[] EQDelement)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 2:59:57 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+
+
+ISO Not found in DB : 4064
+ONE | 10/14/2021 3:05:02 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 3:05:02 PM --------------------- | ERROR : ISO Not found in DB  4064inEQD+CN+TCLU6058646+4064:102:5+2+2+5'
+ONE | 10/14/2021 3:08:48 PM --------------------- | Read file : OP_Test_LCIT_310F_Awkward_EDI.txt Successed
+ONE | 10/14/2021 3:09:26 PM --------------------- | Read file : OP_Test_LCIT_301F_Underdeck_EDI.txt Successed
+ONE | 10/14/2021 3:10:46 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:16:39 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:19:06 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:19:35 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:21:15 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:21:45 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:22:16 PM --------------------- | Read file : OP_Test_LCIT_301F_ReeferAsDry_EDI.txt Successed
+ONE | 10/14/2021 3:22:39 PM --------------------- | Read file : OP_Test_LCIT_301F_Reefer_EDI.txt Successed
+ONE | 10/14/2021 3:34:07 PM --------------------- | Read file : OP_Test_LCIT_301F_Ondeck_EDI.txt Successed
+ONE | 10/14/2021 3:34:21 PM --------------------- | Read file : OP_Test_LCIT_301F_EDI.txt Successed
+ONE | 10/14/2021 3:35:07 PM --------------------- | Read file : OP_Test_LCIT_301F_Danger_EDI.txt Successed
+ONE | 10/14/2021 3:35:26 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt Successed
+
+ONE | 10/14/2021 4:17:24 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt Successed
+ONE | 10/14/2021 4:39:52 PM --------------------- | Read file : New Text Document.txt SuccessedONE | 10/14/2021 4:39:52 PM --------------------- | Read file : New Text Document.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:42:01 PM --------------------- | Read file : New Text Document.txt SuccessedONE | 10/14/2021 4:42:01 PM --------------------- | Read file : New Text Document.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:43:28 PM --------------------- | Read file : New Text Document.txt SuccessedONE | 10/14/2021 4:43:28 PM --------------------- | Read file : New Text Document.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:43:35 PM --------------------- | Read file : New Text Document.txt SuccessedONE | 10/14/2021 4:43:35 PM --------------------- | Read file : New Text Document.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:44:05 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:44:05 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.ArgumentOutOfRangeException: Index and count must refer to a location within the string.
+Parameter name: count
+   at System.String.RemoveInternal(Int32 startIndex, Int32 count)
+   at edi_translate.ONE_translate.FTX(String[] FTXelement, Int32 countFTX)
+   at edi_translate.ONE_translate.translateEDI(String[] EDI)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:45:49 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:45:49 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:47:33 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:47:33 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:47:53 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:47:53 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:48:26 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:48:26 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)
+ONE | 10/14/2021 4:48:58 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt SuccessedONE | 10/14/2021 4:48:58 PM --------------------- | Read file : OP_Test_LCIT_301F_Blockstowage_EDI.txt System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at ONE.startUp(String operatorCode)

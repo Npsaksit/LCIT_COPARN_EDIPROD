@@ -1,0 +1,21 @@
+ONE | 10/15/2021 2:07:07 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 2:07:07 PM --------------------- | Insert DB : 2 OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+
+ONE | 10/15/2021 2:09:18 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt SuccessedONE | 10/15/2021 2:09:18 PM --------------------- | Insert DB : 2 OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 2:09:54 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt SuccessedONE | 10/15/2021 2:09:54 PM --------------------- | Insert DB : 2 OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 2:10:32 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 2:10:32 PM --------------------- | Insert DB : 2 OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 4:52:49 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 4:52:55 PM --------------------- | Insert DB : Column 'Message Status' does not belong to table . Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 4:56:45 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 4:56:45 PM --------------------- | Insert DB : Column 'Message Status' does not belong to table . Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 4:58:49 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 4:58:49 PM --------------------- | Insert DB : BGM Segment error. Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 5:00:44 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 5:00:44 PM --------------------- | Insert DB : dt.Rows[0][0].ToString() Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 5:01:23 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 5:01:23 PM --------------------- | Insert DB :  Replace Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 5:02:46 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 5:02:46 PM --------------------- | Insert DB : Column 'Message Status' does not belong to table . Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
+ONE | 10/15/2021 5:04:14 PM --------------------- | Read file : OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt Successed
+ONE | 10/15/2021 5:04:15 PM --------------------- | Insert DB : [{" Message Status":"Replace"," Booking Reference":"BKKBT9769400"," Voyage":" 006S"," Vessel Name":"CALAIS TRADER"," Operator Code":" ONE"," Commodity Description":" RESIN POLYETHER"},{" Message Status":null," Booking Reference":"BKKBT9769400"," Voyage":null," Vessel Name":null," Operator Code":null," Commodity Description":null}] Record  OP_Test_LCIT_RDTYP_YY_Credit_EDI.txt
