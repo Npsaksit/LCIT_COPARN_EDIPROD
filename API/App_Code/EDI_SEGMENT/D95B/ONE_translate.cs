@@ -310,6 +310,7 @@ namespace edi_translate
             string typeRFF = "";
             string resultRFF = "";
             string finalRFF = "";
+            string IsAsDry = "";
 
             for (int checkRFF = 0; checkRFF < RFFelement.Count(); checkRFF++)
             {
@@ -351,6 +352,10 @@ namespace edi_translate
                     finalRFF = "\"Block Stowage\":" + "\"" + resultRFF.ToString().Remove(0, 1).Replace(",", "").Replace("'", "") + "\"" + ",";
                 }
 
+            }
+            if(typeRFF.Remove(0,1) == "RAD")
+            {
+                IsAsDry = "\"ReeferAsDry\":"+ "\"" + resultRFF.Remove(0,1).ToString()+"\"";
             }
             return finalRFF;
         }
