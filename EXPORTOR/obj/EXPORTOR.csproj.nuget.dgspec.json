@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj": {}
+  },
+  "projects": {
+    "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj",
+        "projectName": "EXPORTOR",
+        "projectPath": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj",
+        "packagesPath": "C:\\Users\\psaksit\\.nuget\\packages\\",
+        "outputPath": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psaksit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.4, )"
+            },
+            "FreeSpire.XLS": {
+              "target": "Package",
+              "version": "[11.8.6, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1000, )"
+            },
+            "NETStandard.Library.NETFramework": {
+              "target": "Package",
+              "version": "[2.0.0-preview2-25405-01, )"
+            },
+            "RestClient": {
+              "target": "Package",
+              "version": "[3.446.20952, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.12.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
