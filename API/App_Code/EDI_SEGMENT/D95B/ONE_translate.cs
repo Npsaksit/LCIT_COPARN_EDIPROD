@@ -355,7 +355,7 @@ namespace edi_translate
             }
             if(typeRFF.Remove(0,1) == "RAD")
             {
-                IsAsDry = "\"ReeferAsDry\":"+ "\"" + resultRFF.Remove(0,1).ToString()+"\"";
+                finalRFF = "\"ReeferAsDry\":"+ "\"" + resultRFF.Remove(0,1).ToString()+"\",";
             }
             return finalRFF;
         }
