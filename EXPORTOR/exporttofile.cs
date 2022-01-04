@@ -134,7 +134,16 @@ namespace EXPORTOR
                     dtrow[19] = dr["SEAL"].ToString(); // COLUMN : T
                     dtrow[20] = dr["STOW_CODE"].ToString(); // COLUMN : U
                     dtrow[21] = DateTime.Now.ToString("ddMMMyy-HHmmss").ToUpper() + "COP"; // COLUMN : V
-                    dtrow[22] = dr["TMP"].ToString(); // COLUMN : W
+
+                    if(dr["IsAsDry"].ToString() == "Y")
+                    {
+                        dtrow[22] = "As Dry"; // COLUMN : W
+                    }
+                    else
+                    {
+                        dtrow[22] = dr["TMP"].ToString(); // COLUMN : W
+                    }
+                    
                     dtrow[23] = dr["TMPUOM"].ToString(); // COLUMN : X
 
                     if (dr["VENTILATION"].ToString().Length > 0)
@@ -147,8 +156,15 @@ namespace EXPORTOR
                         dtrow[24] = "";
                         dtrow[25] = "";
                     }
-
-                    dtrow[26] = dr["CMDT"].ToString(); // COLUMN : AA       
+                     if(dr["IsAsDry"].ToString() == "Y")
+                     {
+                         dtrow[26] = "Reefer As Dry " + dr["CMDT"].ToString(); // COLUMN : AA 
+                     }
+                     else
+                     {
+                         dtrow[26] = dr["CMDT"].ToString(); // COLUMN : AA 
+                     }
+                          
                     dtrow[27] = ""; // COLUMN : AB      
                     dtrow[28] = ""; // COLUMN : AC      
                     dtrow[29] = ""; // COLUMN : AD      
@@ -162,7 +178,16 @@ namespace EXPORTOR
                     dtrow[37] = ""; // COLUMN : AL
                     dtrow[38] = ""; // COLUMN : AM 
                     dtrow[39] = ""; // COLUMN : AN 
-                    dtrow[40] = dr["OOG_OH"].ToString() + " " + dr["OOG_OF"].ToString() + " " + dr["OOG_OA"].ToString() + " " + dr["OOG_OL"].ToString() + " " + dr["OOG_OR"].ToString(); // COLUMN : AO 
+
+                    if(dr["IsAsDry"].ToString() == "Y")
+                    {
+                        dtrow[40] = "Reefer As Dry " + dr["OOG_OH"].ToString() + " " + dr["OOG_OF"].ToString() + " " + dr["OOG_OA"].ToString() + " " + dr["OOG_OL"].ToString() + " " + dr["OOG_OR"].ToString(); // COLUMN : AO 
+                    }
+                    else
+                    {
+                        dtrow[40] = dr["OOG_OH"].ToString() + " " + dr["OOG_OF"].ToString() + " " + dr["OOG_OA"].ToString() + " " + dr["OOG_OL"].ToString() + " " + dr["OOG_OR"].ToString(); // COLUMN : AO 
+                    }
+                    
                     dtrow[41] = ""; // COLUMN : AP 
                     dt.Rows.Add(dtrow);
 
