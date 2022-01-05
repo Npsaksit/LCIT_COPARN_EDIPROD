@@ -15,9 +15,9 @@ namespace keepfile
 {
     public class flepath
     {
-        public DirectoryInfo getedi_ONE = new DirectoryInfo(@"D:\FTP_CUSTOMERS\ONELINE-TEST\");
-        public DirectoryInfo moveedi_ONE = new DirectoryInfo(@"D:\LCIT_EDI_COPARN\TEST_FILE\ONE\IncorrectVersion\");
-        public DirectoryInfo backupedi_ONE = new DirectoryInfo(@"D:\LCIT_EDI_COPARN\TEST_FILE\ONE\backup\");
+        public DirectoryInfo getedi_ONE = new DirectoryInfo(@"D:\FTP_CUSTOMERS\ONELINE\");
+        public DirectoryInfo moveedi_ONE = new DirectoryInfo(@"D:\LCIT_EDI_COPARN\BACKUP\ONE\IncorrectVersion\");
+        public DirectoryInfo backupedi_ONE = new DirectoryInfo(@"D:\LCIT_EDI_COPARN\BACKUP\ONE\backup\");
         public DirectoryInfo log = new DirectoryInfo(@"D:\LCIT_EDI_COPARN\LOG\");
     }
 
