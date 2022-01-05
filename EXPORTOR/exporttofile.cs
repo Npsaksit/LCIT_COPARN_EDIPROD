@@ -115,8 +115,8 @@ namespace EXPORTOR
 
                     if (dr["VGM"].ToString() == null || dr["VGM"].ToString() == "")
                     {
-                        dtrow[11] = dr["VGM"].ToString(); // COLUMN : L
-                        dtrow[12] = dr["VGM_UOM"].ToString(); // COLUMN : M
+                        dtrow[11] = dr["GROSSWEIGHT"].ToString(); // COLUMN : L
+                        dtrow[12] = dr["GROSSWEIGHT_UOM"].ToString(); // COLUMN : M
 
                     }
                     else
