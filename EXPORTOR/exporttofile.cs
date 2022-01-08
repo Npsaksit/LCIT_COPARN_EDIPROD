@@ -50,7 +50,7 @@ namespace EXPORTOR
                 for (int checkpg = 0; checkpg < dtCheckProfile.Rows.Count; checkpg++)
                 {
 
-                    ReadEDIfile(dtCheckProfile.Rows[checkpg][0].ToString()); // From API 
+                    Console.WriteLine(ReadEDIfile(dtCheckProfile.Rows[checkpg][0].ToString())); // From API 
 
                     cone.Open();
                     SqlDataAdapter sdaQuery = new SqlDataAdapter("SELECT VESSEL_NAME, VOYAGE, OPERATOR_CODE, RECORD_STATUS FROM LCIT_EDI_COPARN.dbo.COPARN_EDIDATA WHERE RECORD_STATUS NOT LIKE 'INACTIVE' AND OPERATOR_CODE LIKE '" + dtCheckProfile.Rows[checkpg][0].ToString() + "' AND VESSEL_NAME !='' AND VOYAGE !='' GROUP BY VESSEL_NAME, VOYAGE,OPERATOR_CODE,RECORD_STATUS", cone);
@@ -64,6 +64,8 @@ namespace EXPORTOR
                         verifyData(dtQuery);
 
                     }
+
+
 
                 }
             }
@@ -201,20 +203,20 @@ namespace EXPORTOR
                         wb.Worksheets.Add(dt, "DataImport");
                         wb.Worksheets.Add(dtEX, "ColumnMapping");
 
-                        wb.SaveAs(fp.xlsx.ToString() + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm") + ".xlsx");
+                        wb.SaveAs(fp.xlsx.ToString() + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + ".xlsx");
 
-                        logfile += getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " | " + DateTime.Now.ToString() + " --------------------- | export file :" + fp.xlsx.ToString() + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm") + ".xlsx\r\n";
+                        logfile += getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " | " + DateTime.Now.ToString() + " --------------------- | export file :" + fp.xlsx.ToString() + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + ".xlsx\r\n";
 
                         Console.WriteLine(logfile);
 
-                        finalFileName = getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm") + ".xls";
+                        finalFileName = getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + ".xls";
 
                         // convertToXls(fp.xlsx.ToString() + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "\\" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "\\Shore Pre-advise " + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " Vessel -" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + " " + getdt.Rows[checkdt]["VOYAGE"].ToString() + " " + DateTime.Now.ToString("dd.MM.yyyy HH.mm") + ".xlsx", finalFileName.ToString());
 
                     }
                     catch (Exception ex)
                     {
-                        logfile += getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " | 10/14/2021 3:05:02 PM --------------------- | export file :" + ex.Message.ToString();
+                        logfile += getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + " | "+DateTime.Now.ToString()+" --------------------- | export file :" + ex.Message.ToString();
                     }
                 }
 
@@ -439,7 +441,7 @@ namespace EXPORTOR
                     mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". If any problem please reply to it@lcit.com";
                 }
 
-                attachment = new System.Net.Mail.Attachment(di.ToString() + fi.Name.ToString());
+                attachment = new System.Net.Mail.Attachment(fi.Directory.ToString() + fi.Name.ToString());
                 mail.Attachments.Add(attachment);
 
                 logfile += Operator + " | " + DateTime.Now.ToString() + " --------------------- | send email file :" + fi.Name.ToString() + "\r\n";
@@ -452,11 +454,11 @@ namespace EXPORTOR
                 try
                 {
 
-                    fi.MoveTo(Path.Combine(fi.Directory.ToString() + fi.Name.ToString(), fi.Directory.ToString() + "\\backup\\" + fi.Name.ToString()));
+                    fi.MoveTo(Path.Combine(fi.Directory.ToString() + fi.Name.ToString(), fi.Directory.ToString() + "backup\\" + fi.Name.ToString()));
                 }
                 catch (Exception ex)
                 {
-                    logfile += Operator + " |"+DateTime.Now.ToString()+" --------------------- | to backuo :" + ex.Message + "\r\n";
+                    logfile += Operator + " |"+DateTime.Now.ToString()+" --------------------- | to backup :" + ex.Message + "\r\n";
                 }
 
                 // File.Delete(di.ToString() + fi.Name.ToString());
@@ -472,6 +474,7 @@ namespace EXPORTOR
 
         public static string ReadEDIfile(String operatorCode)
         {
+            string ResultAPI = "";
             try
             {
                 var client = new RestClient("http://lcitedi-coparn.lcit.com/api/coparn.asmx/translateCoparn");
@@ -480,14 +483,16 @@ namespace EXPORTOR
                 request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
                 request.AddParameter("operatorCode", operatorCode);
                 IRestResponse response = client.Execute(request);
-                Console.WriteLine(response.Content);
+                ResultAPI = response.Content.ToString();
+               // Console.WriteLine(response.Content);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                ResultAPI = ex.Message.ToString();
+                //Console.WriteLine(ex.Message);
             }
 
-            return "Test";
+            return ResultAPI;
         }
     }
 }

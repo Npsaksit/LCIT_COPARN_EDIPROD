@@ -583,9 +583,10 @@ namespace edi_translate
 
             if (typeFTX.Remove(0, 1).ToString() == "HAN")
             {
-
+                
                 try
                 {
+
                     finalFTX = "\"Stowage\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
                 }
                 catch (Exception ex)
