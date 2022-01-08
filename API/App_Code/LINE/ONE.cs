@@ -60,8 +60,13 @@ public class ONE {
             result = (string) edi_decode.translateEDI(EDIDATA);
 
             resultPrint += result;
+            
+            fi.MoveTo(Path.Combine(fpath.backupedi_ONE.ToString() + fi.Name.ToString(), fpath.moveedi_ONE.ToString() + DateTime.Now.ToString("yyyyMMdd_HHmmss") + fi.Name.ToString()));
+            //File.Move(fpath.getedi_ONE.ToString() + fi.Name.ToString(), fpath.backupedi_ONE.ToString());
 
-            File.Move(fpath.getedi_ONE.ToString() + fi.Name.ToString(), fpath.backupedi_ONE.ToString() + fi.Name.ToString());
+          // log += fpath.getedi_ONE.ToString() + fi.Name.ToString()+ fpath.backupedi_ONE.ToString() + fi.Name.ToString();
+
+           
 
             string dbStatus = (string) ToDB(result.Replace("\r\n", ""), fi.Name.ToString());
             log += operatorCode + " | " + DateTime.Now.ToString() + " --------------------- | Insert DB : " + dbStatus.ToString() + " Record " + " " + fileName + "\r\n";
@@ -69,7 +74,8 @@ public class ONE {
         else 
         {
             result = "Incorrect Version : " + edi_version.ToString();
-            File.Move(fpath.getedi_ONE.ToString() + fi.Name.ToString(), fpath.moveedi_ONE.ToString() + fi.Name.ToString());
+            // File.Move(fpath.getedi_ONE.ToString() + fi.Name.ToString(), fpath.moveedi_ONE.ToString() + fi.Name.ToString());
+            fi.MoveTo(Path.Combine(fpath.moveedi_ONE.ToString(), DateTime.Now.ToString("yyyyMMdd_HHmmss") + fi.Name.ToString()));
 
             log += operatorCode + " | " + DateTime.Now.ToString() + " --------------------- | Check file : " + fileName + " " + result;
         }
