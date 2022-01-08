@@ -38,7 +38,7 @@ namespace cvfile
             catch (Exception ex)
             {
                 sizeCNTR = "XXXXXX";
-                log = "ONE | 10/14/2021 3:05:02 PM --------------------- | ERROR : ISO Not found in DB  " + a.ToString() + "in" + flenm.ToString();
+                log = "ONE |"+ DateTime.Now.ToString()+"  --------------------- | ERROR : ISO Not found in DB  " + a.ToString() + "in" + flenm.ToString();
 
                 savelog.toLogfile(log);
             }
