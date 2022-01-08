@@ -452,11 +452,11 @@ namespace EXPORTOR
                 try
                 {
 
-                    File.Move(di.ToString() + fi.Name.ToString(), di.ToString() + "\\backup\\" + fi.Name.ToString());
+                    fi.MoveTo(Path.Combine(fi.Directory.ToString() + fi.Name.ToString(), fi.Directory.ToString() + "\\backup\\" + fi.Name.ToString()));
                 }
                 catch (Exception ex)
                 {
-                    logfile += Operator + " | 10/14/2021 3:05:02 PM --------------------- | to backuo :" + ex.Message + "\r\n";
+                    logfile += Operator + " |"+DateTime.Now.ToString()+" --------------------- | to backuo :" + ex.Message + "\r\n";
                 }
 
                 // File.Delete(di.ToString() + fi.Name.ToString());
