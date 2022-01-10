@@ -101,7 +101,15 @@ namespace EXPORTOR
                     dtrow[2] = dr["CNTR_NUM"].ToString(); // COLUMN : C
                     dtrow[3] = dr["OPERATOR_CODE"].ToString(); // COLUMN : D
                     dtrow[4] = dr["OPERATOR_CODE"].ToString(); // COLUMN : E
-                    dtrow[5] = dr["SIZE"].ToString(); // COLUMN : F
+                    if(dr["SIZE"].ToString().Length > 2)
+                    {
+                        dtrow[5] = " ISO : " + dr["SIZE"].ToString(); // COLUMN : F
+                    }
+                    else
+                    {
+                        dtrow[5] = dr["SIZE"].ToString(); // COLUMN : F
+                    }
+                    
                     dtrow[6] = dr["TYPE"].ToString(); // COLUMN : G
                     dtrow[7] = dr["HEIGHT"].ToString(); // COLUMN : H
                     dtrow[8] = dr["SS"].ToString(); // COLUMN : I
@@ -150,8 +158,17 @@ namespace EXPORTOR
 
                     if (dr["VENTILATION"].ToString().Length > 0)
                     {
-                        dtrow[24] = dr["VENTILATION"].ToString().Substring(0, dr["VENTILATION"].ToString().Length - 3); // COLUMN : Y
-                        dtrow[25] = dr["VENTILATION"].ToString().Substring(dr["VENTILATION"].ToString().Length - 3, 2); // COLUMN : Z
+                        if(dr["VENTILATION"].ToString().Substring(0, dr["VENTILATION"].ToString().Length - 3) == "0")
+                        {
+                            dtrow[24] = ""; // COLUMN : Y
+                            dtrow[25] = ""; // COLUMN : Z
+                        }
+                        else
+                        {
+                            dtrow[24] = dr["VENTILATION"].ToString().Substring(0, dr["VENTILATION"].ToString().Length - 3); // COLUMN : Y
+                            dtrow[25] = dr["VENTILATION"].ToString().Substring(dr["VENTILATION"].ToString().Length - 3, 3); // COLUMN : Z
+                        }
+                       
                     }
                     else
                     {

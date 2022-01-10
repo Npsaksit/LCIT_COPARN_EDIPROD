@@ -37,7 +37,7 @@ namespace cvfile
             }
             catch (Exception ex)
             {
-                sizeCNTR = "XXXXXX";
+                sizeCNTR = a;
                 log = "ONE |"+ DateTime.Now.ToString()+"  --------------------- | ERROR : ISO Not found in DB  " + a.ToString() + "in" + flenm.ToString();
 
                 savelog.toLogfile(log);
