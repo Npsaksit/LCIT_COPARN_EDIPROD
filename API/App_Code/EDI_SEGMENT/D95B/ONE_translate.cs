@@ -16,6 +16,7 @@ namespace edi_translate
     public class ONE_translate
     {
         cvfile.convertISO cviso = new cvfile.convertISO();
+        int checkStowag = 0;
 
         public string checkEDIVersion(String[] EDI)
         {
@@ -179,6 +180,7 @@ namespace edi_translate
                         }
 
                         countEQD++;
+                        checkStowag =0;
 
                         resultEDI += BGM_Result + TDT_Result + FTX_Result + (string)EQD(new string[] {
             EDI[edi_file]
@@ -586,8 +588,19 @@ namespace edi_translate
                 
                 try
                 {
-
-                    finalFTX = "\"Stowage\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
+                    if(checkStowag == 0)
+                    {
+                        finalFTX = "\"Stowage\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
+                        checkStowag++;
+                    }
+                else
+                    {
+                        
+                        finalFTX = "\"Stowage"+checkStowag+"\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
+                        checkStowag++;
+                    }
+                    
+                    
                 }
                 catch (Exception ex)
                 {
