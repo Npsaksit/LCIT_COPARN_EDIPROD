@@ -689,7 +689,7 @@ namespace edi_translate
                 }
 
                 fianlEQD = "\"Container No\":" + "\"" + cntrNo.Remove(0, 1).ToString() + "\"," +
-                  "\"ISO\":" + "\"" + cviso.iso_check(ISO.Remove(0, 1).ToString(), EQDelement[0].ToString()) + "\"," +
+                  "\"ISO\":" + "\"" + cviso.iso_check(ISO.Remove(0, 1).ToString(), EQDelement[0].ToString(),"ONE") + "\"," +
                   "\"Status\":" + "\"" + cntrStatus.ToString() + "\"," +
                   "\"Laden\":" + "\"" + laden.ToString() + "\",";
 

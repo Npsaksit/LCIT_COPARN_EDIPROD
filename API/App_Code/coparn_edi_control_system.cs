@@ -45,16 +45,39 @@ namespace coparn_edi_system
         }
 
         [WebMethod]
-        public string isoConvert(String iso)
+        public string isoConvert(String a,String line)
         {
             string result;
 
 
-            result = (string)cviso.iso_check(iso, null);
+            result = (string)cviso.iso_check(a, "",line);
 
 
 
             return result;
+
+            // string sizeCNTR = "";
+            // // string log = "";
+            // // Method for check ISO code for show container size and type           
+            // SqlConnection con = new SqlConnection();
+            // con.ConnectionString = constr.connectionLCIT_EDI_COPARN;
+            // SqlDataAdapter sda = new SqlDataAdapter("SELECT CONCAT(SIZE,TYPE,HEIGHT) FROM LCIT_EDI_COPARN.DBO.CNTR_TYPE_MAPPING WHERE [ISO_CODE] = '" + a + "' AND LINE = '"+line+"'", con);
+            // DataTable dt = new DataTable();
+            // dt.TableName = "TestISO";
+            // sda.Fill(dt);
+            // try
+            // {
+            //     sizeCNTR = dt.Rows[0]["SITY"].ToString();
+            // }
+            // catch (Exception ex)
+            // {
+            //     sizeCNTR = a;
+            //     // log = "ONE |"+ DateTime.Now.ToString()+"  --------------------- | ERROR : ISO Not found in DB  " + a.ToString() + "in" + flenm.ToString();
+
+            //     // savelog.toLogfile(log);
+            // }
+
+            // return sizeCNTR;
         }
 
         [WebMethod]
