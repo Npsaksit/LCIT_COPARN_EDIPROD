@@ -73,7 +73,7 @@ namespace EXPORTOR
             Console.WriteLine(dtQuery.Rows.Count);
 
             Console.WriteLine("Please any key to continue ...");
-            Console.ReadKey(true);
+            // Console.ReadKey(true);
         }
 
         public static void verifyData(DataTable getdt)
