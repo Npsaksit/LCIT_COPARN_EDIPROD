@@ -72,7 +72,7 @@ public class ONE {
 
             //  
            
-            log += operatorCode + " | " + DateTime.Now.ToString() + " --------------------- | Insert DB : " + dbStatus.ToString() + " Record " + " " + fileName;
+            log += operatorCode + " | " + DateTime.Now.ToString() + " --------------------- | Insert DB : " + dbStatus.ToString() + " Record " + " " + fileName + "\r\n";
         } 
         else 
         {
