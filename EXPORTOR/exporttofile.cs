@@ -451,9 +451,11 @@ namespace EXPORTOR
 
                 // Console.WriteLine(di2.ToString() + fle.Name.ToString());
 
-                logfile += Operator + " | " + DateTime.Now.ToString() + "--------------------- | Convert file to:" + di2.ToString() + fle.Name.ToString().Substring(0, fle.Name.Length - 1) + "\r\n";
+                logfile += Operator + " | " + DateTime.Now.ToString() + "---------------------  | Convert file to:" + di2.ToString() + fle.Name.ToString().Substring(0, fle.Name.Length - 1) + "\r\n";
 
                 File.Delete(di.ToString() + fle.Name);
+                
+               
 
             }
             // 
@@ -461,6 +463,9 @@ namespace EXPORTOR
 
             //
             //Console.WriteLine(pathOrigin);
+
+             tolog.toLogfile(logfile);
+             logfile = "";
 
         }
 
@@ -476,10 +481,10 @@ namespace EXPORTOR
 
             mail.From = new MailAddress(Operator.ToString() + "_coparn_edi@lcit.com");
             mail.IsBodyHtml = true;
-            // mail.To.Add("<Auto-PreAdvise@lcit.com>,<doc.officer@lcit.com>,<Document.Controller@lcit.com>");
-            // mail.CC.Add("<awichan@lcit.com>");
-			// mail.Bcc.Add("<it.edi@lcit.com>");
-            mail.To.Add("<psaksit@lcit.com>");
+            mail.To.Add("<Auto-PreAdvise@lcit.com>,<doc.officer@lcit.com>,<Document.Controller@lcit.com>");
+            mail.CC.Add("<awichan@lcit.com>");
+			mail.Bcc.Add("<it.edi@lcit.com>");
+            // mail.To.Add("<psaksit@lcit.com>");
             // mail.CC.Add("");
 
             foreach (FileInfo fi in di.GetFiles("*.*"))
@@ -520,6 +525,7 @@ namespace EXPORTOR
 
                 // File.Delete(di.ToString() + fi.Name.ToString());
             }
+            tolog.toLogfile(logfile);
         }
 
         public static string PS(string base64EncodedData)
