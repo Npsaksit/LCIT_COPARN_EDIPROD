@@ -87,7 +87,16 @@ namespace EXPORTOR
 
                 cone.Open();
 
-                SqlDataAdapter sdaGetDetail = new SqlDataAdapter("SELECT [No], Booking_No, VESSEL_NAME, VOYAGE, OPERATOR_CODE, POL, POD, DST, CMDT, CNTR_NUM, [SIZE], [TYPE], HEIGHT, SS, LADENT_SATAUS, VGM, VGM_UOM, GROSSWEIGHT, GROSSWEIGHT_UOM, SHIPPER_NAME, CONSIGNEE_NAME, SEAL, ISNULL((SELECT ST.LCIT_CODE FROM LCIT_EDI_COPARN.dbo.STOW_CODE ST WHERE ST.OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND ST.STOW_CODE = LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE),LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE) STOW_CODE, BLOCK_STOWAGE, VENTILATION, TMP, TMPUOM, DG_CLASS, OOG_OH, OOG_OF, OOG_OA, OOG_OL, OOG_OR, GATE_ACTIVITY_CODE, PAYMENT, MODIFY_DATE, RECORD_STATUS, IsAsDry FROM LCIT_EDI_COPARN.dbo.COPARN_EDIDATA WHERE OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND VESSEL_NAME LIKE '" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + "'AND VOYAGE LIKE '" + getdt.Rows[checkdt]["VOYAGE"].ToString() + "'AND RECORD_STATUS LIKE '" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "'", cone);
+           
+
+                // SqlDataAdapter sdaGetDetail = new SqlDataAdapter("SELECT [No], Booking_No, VESSEL_NAME, VOYAGE, OPERATOR_CODE, POL, POD, DST, CMDT, CNTR_NUM, [SIZE], [TYPE], HEIGHT, SS, LADENT_SATAUS, VGM, VGM_UOM, GROSSWEIGHT, GROSSWEIGHT_UOM, SHIPPER_NAME, CONSIGNEE_NAME, SEAL, ISNULL((SELECT ST.LCIT_CODE FROM LCIT_EDI_COPARN.dbo.STOW_CODE ST WHERE ST.OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND ST.STOW_CODE = LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE),LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE) STOW_CODE, BLOCK_STOWAGE, VENTILATION, TMP, TMPUOM, DG_CLASS, OOG_OH, OOG_OF, OOG_OA, OOG_OL, OOG_OR, GATE_ACTIVITY_CODE, PAYMENT, MODIFY_DATE, RECORD_STATUS, IsAsDry FROM LCIT_EDI_COPARN.dbo.COPARN_EDIDATA WHERE OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND VESSEL_NAME LIKE '" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + "'AND VOYAGE LIKE '" + getdt.Rows[checkdt]["VOYAGE"].ToString() + "'AND RECORD_STATUS LIKE '" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "'", cone);
+
+                SqlDataAdapter sdaGetDetail = new SqlDataAdapter("SELECT [No], Booking_No,VESSEL_NAME,  (SELECT VSL_CODE FROM LCIT_EDI_COPARN.dbo.VESSEL_CODE WHERE  VESSEL_NAME like '" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + "') + VOYAGE AS VOYAGE, OPERATOR_CODE, POL, POD, DST, CMDT, CNTR_NUM, [SIZE], [TYPE], HEIGHT, SS, LADENT_SATAUS, VGM, VGM_UOM, GROSSWEIGHT, GROSSWEIGHT_UOM, SHIPPER_NAME, CONSIGNEE_NAME, SEAL, ISNULL((SELECT ST.LCIT_CODE FROM LCIT_EDI_COPARN.dbo.STOW_CODE ST WHERE ST.OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND ST.STOW_CODE = LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE), LCIT_EDI_COPARN.dbo.COPARN_EDIDATA.STOW_CODE) STOW_CODE, BLOCK_STOWAGE, VENTILATION, TMP, TMPUOM, DG_CLASS, OOG_OH, OOG_OF, OOG_OA, OOG_OL, OOG_OR, GATE_ACTIVITY_CODE, PAYMENT, MODIFY_DATE, RECORD_STATUS, IsAsDry FROM LCIT_EDI_COPARN.dbo.COPARN_EDIDATA WHERE OPERATOR_CODE LIKE '" + getdt.Rows[checkdt]["OPERATOR_CODE"].ToString() + "'AND VESSEL_NAME LIKE '" + getdt.Rows[checkdt]["VESSEL_NAME"].ToString() + "'AND VOYAGE LIKE '" + getdt.Rows[checkdt]["VOYAGE"].ToString() + "'AND RECORD_STATUS LIKE '" + getdt.Rows[checkdt]["RECORD_STATUS"].ToString() + "'", cone);
+
+
+                
+
+
                 DataTable dtGetDetail = new DataTable();
                 sdaGetDetail.Fill(dtGetDetail);
 
@@ -166,7 +175,17 @@ namespace EXPORTOR
                         else
                         {
                             dtrow[24] = dr["VENTILATION"].ToString().Substring(0, dr["VENTILATION"].ToString().Length - 3); // COLUMN : Y
-                            dtrow[25] = dr["VENTILATION"].ToString().Substring(dr["VENTILATION"].ToString().Length - 3, 3); // COLUMN : Z
+                            
+                            if(dr["VENTILATION"].ToString().Substring(dr["VENTILATION"].ToString().Length - 3, 3) == "PCT")
+                            {
+                                dtrow[25] = "PO"; // COLUMN : Z
+                            }
+                            else
+                            {
+                                dtrow[25] = dr["VENTILATION"].ToString().Substring(dr["VENTILATION"].ToString().Length - 3, 3); // COLUMN : Z
+                            }
+
+                            
                         }
                        
                     }
@@ -448,6 +467,7 @@ namespace EXPORTOR
         public static void sendEmail(String Operator, String recordStatus)
         {
             string filePath = fp.xls.ToString() + Operator + "\\" + recordStatus + "\\";
+            string bodyContact ="<style type='text/css'> .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;} .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36; font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3; font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-ytkg{background-color:#eee8d5;border-color:inherit;font-size:12px;text-align:center;vertical-align:middle} .tg .tg-4bi3{background-color:#000000;border-color:#000000;color:#ffffff;font-family:Arial, Helvetica, sans-serif !important;; font-size:12px;font-weight:bold;text-align:center;vertical-align:bottom} .tg .tg-9o1m{border-color:inherit;font-size:12px;text-align:center;vertical-align:middle} .tg .tg-u9r8{border-color:inherit;font-size:12px;text-align:center;vertical-align:bottom} .tg .tg-02fc{background-color:#eee8d5;border-color:inherit;font-size:12px;text-align:left;vertical-align:bottom} .tg .tg-2776{border-color:inherit;font-size:12px;text-align:left;vertical-align:bottom} </style> <table class='tg'> <thead> <tr> <th class='tg-4bi3' colspan='3'>   <br>LAEM CHABANG TERMINAL   TEAM (TML LCH)   </th> </tr> </thead> <tbody> <tr> <td class='tg-ytkg' colspan='3'>&nbsp;&nbsp;&nbsp;<br><span style='color:black'>Group email : </span><a href='mailto:th.ope.tml.lch.ex@one-line.com'>th.ope.tml.lch.ex@one-line.com</a>&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-9o1m'>&nbsp;&nbsp;&nbsp;<br><span style='color:black'>NAME</span>&nbsp;&nbsp;&nbsp;</td> <td class='tg-9o1m'>&nbsp;&nbsp;&nbsp;<br><span style='color:black'>Telephone</span>&nbsp;&nbsp;&nbsp;</td> <td class='tg-u9r8'>&nbsp;&nbsp;&nbsp;<br><span style='color:black'>Mobile</span>&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>Mr.&nbsp;&nbsp;&nbsp;Kritsana Prongcharoen&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>033-311-8144 &nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>064-219-4195&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>Mr.&nbsp;&nbsp;&nbsp;Chaiyapat Innarong&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>033-311-8143&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>093-459-1654&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>Mr.&nbsp;&nbsp;&nbsp;Narin Jittakit&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>033-311-8139&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>094-496-1916&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>Ms.&nbsp;&nbsp;&nbsp;Patra Thongsawang&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>033-311-8152&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>064-219-5526&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>Ms.&nbsp;&nbsp;&nbsp;Aunchalee Promsorn&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>033-311-8146&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>064-219-5485&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>Mr.&nbsp;&nbsp;&nbsp;Cholladech Kultakerng&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>033-311-8145&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>081-491-4891&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>Ms.&nbsp;&nbsp;&nbsp;Pichaya Kamwong&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>033-311-8159&nbsp;&nbsp;&nbsp;</td> <td class='tg-02fc'>&nbsp;&nbsp;&nbsp;<br>088-415-4198&nbsp;&nbsp;&nbsp;</td> </tr> <tr> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>Mr.&nbsp;&nbsp;&nbsp;Prasert Phlynern&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>033-311-8140&nbsp;&nbsp;&nbsp;</td> <td class='tg-2776'>&nbsp;&nbsp;&nbsp;<br>064-219-5538&nbsp;&nbsp;&nbsp;</td> </tr> </tbody> </table>";
             DirectoryInfo di = new DirectoryInfo(@filePath);
 
             MailMessage mail = new MailMessage();
@@ -456,6 +476,9 @@ namespace EXPORTOR
 
             mail.From = new MailAddress(Operator.ToString() + "_coparn_edi@lcit.com");
             mail.IsBodyHtml = true;
+            // mail.To.Add("<Auto-PreAdvise@lcit.com>,<doc.officer@lcit.com>,<Document.Controller@lcit.com>");
+            // mail.CC.Add("<awichan@lcit.com>");
+			// mail.Bcc.Add("<it.edi@lcit.com>");
             mail.To.Add("<psaksit@lcit.com>");
             // mail.CC.Add("");
 
@@ -464,15 +487,15 @@ namespace EXPORTOR
                 mail.Subject = fi.Name.ToString().Replace(".xls", "") + " : " + recordStatus.ToString() + " File";
                 if (recordStatus.ToString() == "Original")
                 {
-                    mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". If any problem please reply to it@lcit.com";
+                    mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". <br> If any problem please reply to Below contact and CC it@lcit.com <br><br>" + bodyContact;
                 }
                 else if (recordStatus.ToString() == "Replace")
                 {
-                    mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". If any problem please reply to it@lcit.com";
+                    mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". <br> If any problem please reply to Below contact and CC it@lcit.com <br><br>"+ bodyContact;
                 }
                 else if (recordStatus.ToString() == "Cancellation")
                 {
-                    mail.Body = "Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". If any problem please reply to it@lcit.com";
+                    mail.Body = "<h2>Cancle Shore</h2>"+"Please see " + recordStatus + " in attached file for pre-advise EDI " + DateTime.Now.ToString("dd-MMM-yyyy") + ". If any problem please reply to Below contact and CC it@lcit.com <br><br>"+ bodyContact;
                 }
 
                 attachment = new System.Net.Mail.Attachment(fi.Directory.ToString()+"\\" + fi.Name.ToString());
