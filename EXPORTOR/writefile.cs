@@ -31,14 +31,14 @@ namespace writeToFile
                 // Create a file to write to.   
                 using (StreamWriter sw = File.CreateText(filepath))
                 {
-                    sw.Write(Message);
+                    sw.WriteLine(Message);
                 }
             }
             else
             {
                 using (StreamWriter sw = File.AppendText(filepath))
                 {
-                    sw.Write(Message);
+                    sw.WriteLine(Message);
                 }
             }
 
