@@ -538,7 +538,7 @@ namespace edi_translate
             int checkElementFTX = 0;
             string typeFTX = "";
             string detailsFTX = "";
-            string VENdetailFTX = "";
+            string detailFTX2 = "";
             string finalFTX = "";
 
             for (int checkFTX = 0; checkFTX < FTXelement.Count(); checkFTX++)
@@ -561,7 +561,7 @@ namespace edi_translate
                     if (checkElementFTX == 4)
                     {
 
-                        VENdetailFTX += FTXelement[checkFTX][checkFTXCo].ToString();
+                        detailFTX2 += FTXelement[checkFTX][checkFTXCo].ToString();
 
                     }
                 }
@@ -569,7 +569,7 @@ namespace edi_translate
 
             if (typeFTX.Remove(0, 1).ToString() == "AAA")
             {
-                detailsFTX = VENdetailFTX.ToString();
+                detailsFTX = detailFTX2.ToString();
                 if (countFTX < 2)
                 {
                     finalFTX = "\"Commodity Description\":" + "\"" + detailsFTX.Remove(0, 1).ToString().Replace(",", "") + "\",";
@@ -579,7 +579,7 @@ namespace edi_translate
             if (typeFTX.Remove(0, 1).ToString() == "OSI")
             {
 
-                finalFTX = "\"Ventilation\":" + "\"" + VENdetailFTX.Remove(0, 1).ToString() + "\",";
+                finalFTX = "\"Ventilation\":" + "\"" + detailFTX2.Remove(0, 1).ToString() + "\",";
 
             }
 
@@ -590,13 +590,13 @@ namespace edi_translate
                 {
                     if(checkStowag == 0)
                     {
-                        finalFTX = "\"Stowage\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
+                        finalFTX = "\"Stowage\":" + "\"" + detailsFTX2.Remove(0, 1).ToString() + "\",";
                         checkStowag++;
                     }
                 else
                     {
                         
-                        finalFTX = "\"Stowage"+checkStowag+"\":" + "\"" + detailsFTX.Remove(0, 1).ToString() + "\",";
+                        finalFTX = "\"Stowage"+checkStowag+"\":" + "\"" + detailsFTX2.Remove(0, 1).ToString() + "\",";
                         checkStowag++;
                     }
                     
