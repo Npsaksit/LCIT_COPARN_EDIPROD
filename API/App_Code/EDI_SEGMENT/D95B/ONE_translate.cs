@@ -590,13 +590,13 @@ namespace edi_translate
                 {
                     if(checkStowag == 0)
                     {
-                        finalFTX = "\"Stowage\":" + "\"" + detailsFTX2.Remove(0, 1).ToString() + "\",";
+                        finalFTX = "\"Stowage\":" + "\"" + detailFTX2.Remove(0, 1).ToString() + "\",";
                         checkStowag++;
                     }
                 else
                     {
                         
-                        finalFTX = "\"Stowage"+checkStowag+"\":" + "\"" + detailsFTX2.Remove(0, 1).ToString() + "\",";
+                        finalFTX = "\"Stowage"+checkStowag+"\":" + "\"" + detailFTX2.Remove(0, 1).ToString() + "\",";
                         checkStowag++;
                     }
                     
