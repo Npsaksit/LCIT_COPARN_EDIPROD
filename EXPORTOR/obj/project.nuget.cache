@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GQJ1PYaSLuqIPInpH4Q/oFde71YEnhEKabF5hNF4ZatUCuSuMJdNgTFeeE5kCETkWI3CHzO3F0uLRGALJATJBA==",
+  "dgSpecHash": "Xul88mcqSWor2Ma5fp7VqZX69nWclJyd/XEC3kzuKOVINrPAmco1pK9QwpJyt+dWeTx35acdAY/U5FFSaCVYmw==",
   "success": true,
-  "projectFilePath": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj",
+  "projectFilePath": "D:\\LCIT_EDI_COPARN_PROD\\exportor\\EXPORTOR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\psaksit\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
     "C:\\Users\\psaksit\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",

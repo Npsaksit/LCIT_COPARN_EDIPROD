@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj": {}
+    "D:\\LCIT_EDI_COPARN_PROD\\exportor\\EXPORTOR.csproj": {}
   },
   "projects": {
-    "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj": {
+    "D:\\LCIT_EDI_COPARN_PROD\\exportor\\EXPORTOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj",
+        "projectUniqueName": "D:\\LCIT_EDI_COPARN_PROD\\exportor\\EXPORTOR.csproj",
         "projectName": "EXPORTOR",
-        "projectPath": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\EXPORTOR.csproj",
+        "projectPath": "D:\\LCIT_EDI_COPARN_PROD\\exportor\\EXPORTOR.csproj",
         "packagesPath": "C:\\Users\\psaksit\\.nuget\\packages\\",
-        "outputPath": "D:\\LCIT_EDI_COPARN\\EXPORTOR\\obj\\",
+        "outputPath": "D:\\LCIT_EDI_COPARN_PROD\\exportor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\psaksit\\AppData\\Roaming\\NuGet\\NuGet.Config",
